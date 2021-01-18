@@ -1,0 +1,34 @@
+Alfabeto = abcdef...
+
+Binário = 0-1
+
+Numérico = 0123456789
+
+Hexadecimal = 0123456789ABCDEF
+
+------------------------------
+
+Espectros:
+
+RGB = Red-Green-Blue
+
+#_ _ _ _ _ _ 
+
+os dois primeiros elementos do Hexadecimal
+servem para marcar o vermelho, os outros dois
+para marcar o verde e os dois ultimos para 
+marcar o azul.
+
+0 = Ausência de cor
+F = Máximo
+
+#000000 = branco
+#FFFFFF = preto
+
+Dicionário RGB = 0,1,2,3,4... 255
+
+0 = Ausência
+255 = máximo
+
+ex: RGB(255,255,255) = BRANCO
+    RBB(0,0,0) = PRETO
