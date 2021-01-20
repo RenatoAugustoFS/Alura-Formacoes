@@ -2,8 +2,12 @@
 
 namespace Alura\Banco\Modelo;
 
+use Alura\Banco\Traits\AcessoPropriedades;
+
 final class CPF
 {
+    use AcessoPropriedades;
+
     private $numero;
 
     public function __construct(string $numero)

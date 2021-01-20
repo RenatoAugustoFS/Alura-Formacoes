@@ -2,7 +2,7 @@
 
 namespace Alura\Banco\Modelo\Conta;
 
-class ContaPoupanca extends Conta
+Class ContaPoupanca extends Conta 
 {
     protected function percentualTarifa(): float
     {

@@ -2,20 +2,20 @@
 
 namespace Alura\Banco\Modelo\Funcionario;
 
-use Alura\Banco\Modelo\CPF;
 use Alura\Banco\Modelo\Pessoa;
+use Alura\Banco\Modelo\CPF;
 
 abstract class Funcionario extends Pessoa
 {
-    private $salario;
+    private float $salario;
 
     public function __construct(string $nome, CPF $cpf, float $salario)
     {
-        parent::__construct($nome, $cpf);
+        parent::__construct($nome, $cpf); 
         $this->salario = $salario;
     }
 
-    public function alteraNome(string $nome): void
+    public function defineNome(string $nome): void
     {
         $this->validaNome($nome);
         $this->nome = $nome;
@@ -24,7 +24,7 @@ abstract class Funcionario extends Pessoa
     public function recebeAumento(float $valorAumento): void
     {
         if ($valorAumento < 0) {
-            echo "Aumento deve ser positivo";
+            echo "Aumento deve ser positivo!";
             return;
         }
 
@@ -37,4 +37,5 @@ abstract class Funcionario extends Pessoa
     }
 
     abstract public function calculaBonificacao(): float;
+    
 }

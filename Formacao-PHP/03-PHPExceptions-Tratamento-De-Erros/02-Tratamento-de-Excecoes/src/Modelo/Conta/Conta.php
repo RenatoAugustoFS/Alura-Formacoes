@@ -4,8 +4,9 @@ namespace Alura\Banco\Modelo\Conta;
 
 abstract class Conta
 {
-    private $titular;
-    protected $saldo;
+    protected Titular $titular;
+    protected string $saldo;
+    
     private static $numeroDeContas = 0;
 
     public function __construct(Titular $titular)
@@ -25,6 +26,7 @@ abstract class Conta
     {
         $tarifaSaque = $valorASacar * $this->percentualTarifa();
         $valorSaque = $valorASacar + $tarifaSaque;
+
         if ($valorSaque > $this->saldo) {
             echo "Saldo indisponível";
             return;
@@ -64,4 +66,5 @@ abstract class Conta
     }
 
     abstract protected function percentualTarifa(): float;
+
 }

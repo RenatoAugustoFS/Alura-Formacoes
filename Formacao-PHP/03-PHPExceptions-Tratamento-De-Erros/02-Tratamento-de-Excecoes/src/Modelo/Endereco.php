@@ -2,22 +2,25 @@
 
 namespace Alura\Banco\Modelo;
 
+use Alura\Banco\Traits\AcessoPropriedades;
+
 /**
  * Class Endereco
- * @package Alura\Banco\Modelo
+ * @Package Alura\Banco\Modelo
  * @property-read string $cidade
  * @property-read string $bairro
  * @property-read string $rua
  * @property-read string $numero
  */
-final class Endereco
+
+final Class Endereco
 {
     use AcessoPropriedades;
 
-    private $cidade;
-    private $bairro;
-    private $rua;
-    private $numero;
+    private string $cidade;
+    private string $bairro;
+    private string $rua;
+    private string $numero;
 
     public function __construct(string $cidade, string $bairro, string $rua, string $numero)
     {
@@ -47,8 +50,15 @@ final class Endereco
         return $this->numero;
     }
 
-    public function __toString(): string
+    public function __toString(): String
     {
         return "{$this->rua}, {$this->numero}, {$this->bairro}, {$this->cidade}";
     }
+
+    public function __get(String $nomeAtributo)
+    {
+        $metodo = 'recupera' . ucfirst($nomeAtributo);
+        return $this->$metodo();
+    }
+
 }
