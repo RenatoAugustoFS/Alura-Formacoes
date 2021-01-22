@@ -11,5 +11,18 @@
         "guzzlehttp/guzzle": "^7.2",
         "symfony/dom-crawler": "^5.2",
         "symfony/css-selector": "^5.2"
+    },
+    "autoload": {
+       "classmap": [
+            "./Test.php"
+        ],
+
+        "psr-4": {
+            "Alura\\Finder\\": "src/"
+        },
+        
+        "files": [
+            "./functions.php"
+        ]
     }
 }
