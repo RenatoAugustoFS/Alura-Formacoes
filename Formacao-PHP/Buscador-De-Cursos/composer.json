@@ -1,0 +1,14 @@
+{
+    "name": "renato-developer/buscador-cursos",
+    "description": "Projeto que busca e lista todos os cursos da plataforma da Alura",
+    "authors": [
+        {
+            "name": "Renato Augusto",
+            "email": "renatoaugusto.ads@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.2",
+        "symfony/dom-crawler": "^5.2"
+    }
+}
