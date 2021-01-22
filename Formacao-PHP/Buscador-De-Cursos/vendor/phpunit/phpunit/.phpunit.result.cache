@@ -1,1 +1,1 @@
-C:37:"PHPUnit\Runner\DefaultTestResultCache":131:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:1:{s:71:"Alura\BuscadorDeCursos\Tests\TestFinder::testBuscadorDeveRetornarCursos";d:0.054;}}}
+C:37:"PHPUnit\Runner\DefaultTestResultCache":131:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:1:{s:71:"Alura\BuscadorDeCursos\Tests\TestFinder::testBuscadorDeveRetornarCursos";d:0.015;}}}
