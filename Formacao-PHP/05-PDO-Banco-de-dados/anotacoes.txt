@@ -29,3 +29,20 @@ A resolver esse problema, utilizando Prepared Statements
 Que prepared statements podem inclusive ajudar na performance da aplicação
 As diferenças entre bindValue e bindParam para vincular parâmetros aos prepared statements
 Que podemos informar o tipo de dado que estamos passando através do PDO, utilizando o terceiro parâmetro de bindValue e bindParam
+
+
+A class Student foi criada em cima de um padrão muito conhecido que é o Entity que representa o Student como uma entidade
+entidade significa que ele tem uma identidade unica onde cada student é reconhecido atravéz de seu id ou qualquer atributo
+unico, então isso o torna uma entidade e geralmente essa classe precisa ser persistida em algum lugar... e com isso 
+faremos uso de outro padrão de projeto pra criar algo que a persista num banco de dados por exemplo
+
+"Exemplos claros de objetos que exigem uma identidade incluem: Uma pessoa; Um pedido. [...]
+ Esses conceitos têm uma identidade que perdura ao longo do tempo. 
+ Não importa quantas vezes os dados destes conceitos sejam alterados, suas identidades permanecem as mesmas.
+É isso que as torna Entidades."
+
+OBS:: utilizamos na infraestrutura de banco de dados um padrão muito pouco conhecido que é o ...
+Static Creation Method Ou método de criação estático;  ;
+
+O que aplicamos no último vídeo é um padrão de projeto chamado Static Creation Method. 
+Ele é usado quando extraímos a lógica de criação de um objeto para um método estático específico para isso.
