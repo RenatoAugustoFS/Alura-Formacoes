@@ -46,3 +46,5 @@ Static Creation Method Ou método de criação estático;  ;
 
 O que aplicamos no último vídeo é um padrão de projeto chamado Static Creation Method. 
 Ele é usado quando extraímos a lógica de criação de um objeto para um método estático específico para isso.
+
+Este tipo de design pattern podemos encontrar no Refactoring Guru
