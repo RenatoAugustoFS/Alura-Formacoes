@@ -8,11 +8,9 @@ class ConnectionCreator
 {
     public static function createConnection(): PDO
     {
-        $connection = new PDO(
-            'mysql:host=172.17.0.2;dbname=banco',
-            'root',
-            'senhalura'
-        );
+        $caminhoBanco = __DIR__ . '/banco.sqlite';
+        $connection = new PDO('sqlite:' . $caminhoBanco);
+
         $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $connection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 
